@@ -217,13 +217,135 @@
         justify-content: center;
         text-align: center;
     }
+
+    /*----- YOGA FUTURE PROGRAM > 320px -----*/
+    .yoga-future-program h2 {
+        color: gray;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 600;
+        margin: 25px 20% 0 20%;
+        font-size: 20px;
+    }
+    .yoga-future-program > h2 {
+        color: rgb(107, 71, 251);
+    }
+    .yoga-future-program p {
+        text-align: center;
+        font-family: 'FREESCPT';
+        margin: 9px 0 0 0;
+        font-size: 35px;
+    }
+    .yoga-future-program > p {
+        color: gray;
+    }
+    .yoga-future-program .program-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        margin: 15px 0 0 0;
+    }
+    .program-cards .card {
+        margin: 10px 15px 10px 15px;
+        width: 216px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px 2px rgb(235, 234, 234);
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+    .program-cards .card:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 1s;
+    }
+    .card img {
+        float: left;
+        width: 215px;
+        height: 247px;
+        border-radius: 7px;
+    }
+    .card-text {
+        margin: 0 10% 10% 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-text h2 {
+        font-size: 15px;
+        margin: 15px 0 0 0;
+        text-align: left;
+    }
+    .card-text p {
+        color: black;
+        font-family: 'Times New Roman', Times, sans-serif;
+        font-size: 15px;
+        text-align: left;
+        margin: 20px 0 15px 0;
+        padding: 0 0 0 0;
+    }
+    .card-text span {
+        color: grey;
+        font-family: 'Times New Roman', Times, sans-serif;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /*----- PICTURES SECTION > 320px -----*/
+    .pictures-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15% 0 0 0;
+    }
+    .pictures-section a {
+        width: 50%;
+    }
+    .yoga-picture {
+        background-color: blue;
+        margin-bottom: -4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .yoga-picture img {
+        width: 100%;
+        position: relative;
+        z-index: 3;
+    }
+    .yoga-picture:hover img {
+        opacity: 65%;
+        z-index: 1;
+    }
+    .yoga-picture:hover .icon-search {
+        opacity: 100%;
+        transition: all 1.2s;
+    }
+    .yoga-picture .icon-search {
+        content: "\e986";
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        opacity: 0;
+    }
 }
+
 @media (min-width: 570px) {
     /* MENU BTN > 570px */
     .menu-btn.active {
         margin: 0 0 0 85%;
     }
+    /* YOGA FUTURE PROGRAM > 570px */
+    .program-cards .card {
+        margin: 10px 10px 10px 10px;
+    }
 }
+
 @media (min-width: 768px) {
     .logo {
         margin: 0 0 0 90px;
@@ -300,6 +422,43 @@
         margin: 15px 0 0 35px;
         justify-content: flex-start;
         text-align: start;
+    }
+
+    /* YOGA FUTURE PROGRAM > 768px */
+    .yoga-future-program h2 {
+        margin: 95px 0 0 0;
+    }
+    .yoga-future-program .program-cards {
+        margin: 38px 0 0 0;
+    }
+    .program-cards .card {
+        width: 455px;
+        flex-wrap: nowrap;
+    }
+    .card img {
+        border-radius: 0px;
+        margin-right: 22px;
+        height: auto;
+    }
+    .card-text {
+        display: block;
+        flex-wrap: nowrap;
+        margin: 0 0 0 0;
+    }
+    .card-text h2 {
+        margin: 36px 0 0 0;
+    }
+    .card-text p {
+        margin: 20px 0 7px 0;
+        padding: 0 30px 0 0;
+    }
+
+    /* PICTURE SECTION > 768px */
+    .pictures-section {
+        margin: 160px 0 0 0;
+    }
+    .pictures-section a {
+        width: 25%;
     }
 }
 @media (min-width: 992px) {}
