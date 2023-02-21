@@ -1,0 +1,305 @@
+@media (min-width: 320px) {
+    body {
+        margin: 0;
+    }
+    .header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        height: inherit;
+        margin: 0 0 0 8%;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        width: 55px;
+    }
+
+    /*----- HAMBURGER MENU < 768px -----*/
+    .menu-btn {
+        width: 40px;
+        height: 40px;
+        margin: 0 8% 0 0;
+        position: relative;
+        z-index: 4;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .menu-btn.active {
+        position: fixed;
+        margin: 0 0 0 80%;
+        z-index: 4;
+    }
+    .menu-btn span {
+        background-color: rgb(107, 71, 251);
+        width: 100%;
+        height: 1.8px;
+        transition: all 0.5s;
+    }
+    /* gamburger icon, when menu is open */
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+        transform: translate(0, 10px) rotate(45deg);
+        transition: transform 0.5s;
+    }
+    .menu-btn.active span:nth-of-type(3) {
+        transform: translate(0px, -10px) rotate(-45deg);
+        transition: transform 0.5s;
+    }
+    /* menu, that appears */
+    .menu {
+        background: white;
+        width: 100%;
+        height: 200px;
+        padding: 80px 0 0 0;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        transition: transform 0.5s; 
+    }
+    .menu.active {
+        transform: translateX(0);
+    }
+    .menu nav {
+        display: flex;
+        justify-content: center;
+    }
+    .menu nav ul {
+        padding: 0 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    .menu nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .menu nav ul li a {
+        color: rgb(40, 40, 40);
+        line-height: 25px;
+        text-decoration: none;
+    }
+    .menu nav ul li a:hover {
+        color: rgb(107, 71, 251);
+        border: solid rgb(107, 71, 251);
+        border-width: 0 0 1px 0;
+        width: 15%;
+        line-height: 25px;
+        position: relative;
+        text-decoration: none;
+    }
+    .menu li {
+        list-style-type: none;
+    }
+
+    /*----- FORM < 768px -----*/
+    main .form-back {
+        background-color: rgb(83, 83, 248);
+        width: 100%;
+        height: 600px;
+        opacity: 90%;
+        position: absolute;
+        z-index: 1;  
+    }
+    main .form-photo {
+        background: url(images/bg-01.jpg) no-repeat center center;
+        background-size: auto 100%;
+        width: 100%;
+        height: 600px;
+        opacity: 30%;
+        position: absolute;
+        z-index: 2;
+    }
+    main .form-section {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-evenly;
+        position: relative;
+        z-index: 3;
+    }
+    .form-square {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .form-block {
+        background-color: white;
+        height: 314px;
+        width: 240px;
+        float: right;
+        border-radius: 6%;   
+    }
+    .form-block h2 {
+        color: rgb(120, 58, 255);
+        margin: 27px 0 12px 22px;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .form-block input {
+        background-color: rgb(238, 238, 238);
+        color: grey;
+        border: 0;
+        border-radius: 10px;
+        height: 36px;
+        width: 180px;
+        margin: 8px 0 8px 22px;
+        padding-left: 8px;
+    }
+    .form-block select {
+        background-color: rgb(238, 238, 238);
+        color: grey;
+        border: 0;
+        border-radius: 10px;
+        height: 37px;
+        width: 193px;
+        margin: 8px 0 8px 22px;
+        padding: 0 0 0 5px;
+    }
+    .form-block button {
+        background-color: rgb(107, 71, 251);;
+        color: white;
+        float: right;
+        width: 136px;
+        height: 40px;
+        margin: 19px 25px 0 0;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .form-block button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+    .tagline {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    .tagline h1 {
+        width: 100%;
+        color: white;
+        margin: 0 0 15px 0;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .tagline p {
+        width: 100%;
+        color: white;
+        font-family: 'FREESCPT', sans-serif;
+        font-size: 25px;
+        margin: 15px 0 0 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (min-width: 570px) {
+    /* MENU BTN > 570px */
+    .menu-btn.active {
+        margin: 0 0 0 85%;
+    }
+}
+@media (min-width: 768px) {
+    .logo {
+        margin: 0 0 0 90px;
+    }
+    /*----- HAMBURGER MENU > 768px -----*/
+    .menu-btn {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        width: 80%;
+        height: 80px;
+        padding: 0 0 0 0;
+        transform: none;
+        transition: none;
+    }
+    .menu nav {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .menu nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 1% 0 0;
+    }
+    .menu nav ul li {
+        width: auto;
+        margin: 0 30px 0 15px;
+    }
+
+    /* FORM > 768px */
+    main .form-back {
+        background-color: rgb(83, 83, 248);
+        width: 100%;
+        height: 480px;
+    }
+    main .form-photo {
+        background: url(images/bg-01.jpg) no-repeat center center;
+        background-size: auto 100%;
+        width: 100%;
+        height: 480px;
+    }
+    main .form-section {
+        width: 100%;
+        height: 480px;
+    }
+    .form-square {
+        width: 50%;
+        height: inherit;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .form-block {
+        margin: 0 25px 0 0;
+    }
+    .tagline {
+        width: 50%;
+        height: inherit;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+    }
+    .tagline h1 {
+        font-size: 40px;
+        margin: 0 0 15px 35px;
+        padding: 0 15px 0 0;
+        justify-content: flex-start;
+        text-align: start;
+    }
+    .tagline p {
+        font-size: 35px;
+        margin: 15px 0 0 35px;
+        justify-content: flex-start;
+        text-align: start;
+    }
+}
+@media (min-width: 992px) {}
