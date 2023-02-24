@@ -484,6 +484,92 @@
         font-size: 13px;
         line-height: 22px;
     }
+
+    /*----- PAY CARDS SECTION > 320px -----*/
+    .pay-cards-back {
+        background-color: white;
+        width: 100%;
+        height: 1450px;
+        position: absolute;
+    }
+    .pay-cards-picture {
+        background: url(images/bg-03.jpg) right bottom no-repeat;
+        background-size: auto 100%;
+        width: 100%;
+        height: inherit;
+        position: absolute;
+    }
+    .pay-cards-block {
+        width: 100%;
+        height: 1400px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        align-content: space-around;
+        padding: 50px 0 0 0;
+    }
+    .pay-cards-block .pay-card {
+        width: 270px;
+        height: 400px;
+        box-shadow: 1px 0px 0px 3px rgb(247, 246, 246);
+        border-radius: 15px;
+        background-color: white;
+        margin: 0 10% 0 10%;
+    }
+    .pay-card .pay-card-price {
+        background-color: rgb(107, 71, 251);
+        width: 100%;
+        height: 30%;
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pay-card-price .price {
+        color: white;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+    .pay-card .pay-card-info {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        margin: 6% 0 0 0;
+    }
+    .pay-card-info .info-1c {
+        border: solid black;
+        border-width: 1px 0 0 0;
+        width: 35%;
+        position: absolute;
+        margin: 0 35% 0 35%;
+        padding: 0 0 0 0;
+    }
+    .pay-card-info p {
+        margin: 0 0 0 0;
+        padding: 6% 0 6% 0;
+    }
+    .pay-card .button-block {
+        display: flex;
+        align-items: center;
+        padding: 5% 0 0 0;
+    }
+    .button-block button {
+        width: 46%;
+        height: 38px;
+        background-color: rgb(107, 71, 251);
+        color: white;
+        border: 0px;
+        border-radius: 18px;
+        margin: 0 auto 0 auto;
+    }
+    .button-block button:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 1s;
+    }
 }
 
 @media (min-width: 570px) {
@@ -669,6 +755,30 @@
         height: 40%;
         margin: 2% 1% 2.5% 1%;
     }
+
+    /*----- PAY CARDS > 768px -----*/
+    .pay-cards-back {
+        height: 900px;
+    }
+    .pay-cards-block {
+        height: 900px;
+        padding: 0 0 0 0;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    .pay-cards-block .pay-card {
+        width: 270px;
+        height: 40%;
+        margin: 5% 5% 0 5%;
+    }
+    .contacts {
+        margin: 5% 0 0 0;
+    }
+    .contacts .c-link {
+        width: 50%;
+        display: flex;
+        margin: 0 0 3% 0;
+    }
 }
 @media (min-width: 992px) {
     /*----- ABOUT US > 992px -----*/
@@ -677,5 +787,17 @@
     }
     .icon-circle-right {
         margin: 0 -1.5% 0 0;
+    }
+
+    /*----- PAY CARDS > 992px -----*/
+    .pay-cards-block {
+        height: 560px;
+        padding: 0 0 0 0;
+        align-content: flex-start;
+    }
+    .pay-cards-block .pay-card {
+        width: 270px;
+        height: 70%;
+        margin: 5% 1% 0 1%;
     }
 }
