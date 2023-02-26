@@ -1,4 +1,4 @@
-# Yoga-website ![yoga-gif](/images/yoga-stretch.gif)
+# Yoga-website
 
 🧘‍♀️***Responsive cross-browser layout***  
 for mobile (>320px), tablets (>570px, >768px) and large screens (>992px),  
