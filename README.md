@@ -1,8 +1,8 @@
-# Yoga-website
+<h1>Yoga-website <img src="/images/yoga-stretch.gif" height="30"></h1>
 
-🧘‍♀️***Responsive cross-browser layout***  
-for mobile (>320px), tablets (>570px, >768px) and large screens (>992px),  
-using HTML, CSS and JavaScript.  
-Pop up "burger menu" on small screen (320px-768px).  
+🧘‍♀️ <i><b>Responsive cross-browser layout</b></i><br>
+for mobile (>320px), tablets (>570px, >768px) and large screens (>992px),<br>
+using HTML, CSS and JavaScript.<br>
+Pop up "burger menu" on small screen (320px-768px).
 
-![Project illustration](/images/responsive_prew/yoga-mainpage.jpg)
+<img src="/images/responsive_prew/yoga-mainpage.jpg">
