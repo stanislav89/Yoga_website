@@ -1,6 +1,6 @@
 <h1>Yoga-website <img src="/images/yoga-stretch.gif" height="30"></h1>
 
-<a href="https://stanislav89.github.io/Yoga_website/">👉 Live Demo</a><br>
+<a href="https://stanislav89.github.io/Yoga_website/" target="_blank">👉 Live Demo</a><br>
 🧘‍♀️ <i><b>Responsive cross-browser layout</b></i><br>
 for mobile (>320px), tablets (>570px, >768px) and large screens (>992px),<br>
 using HTML, CSS and JavaScript.<br>
